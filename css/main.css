@@ -482,6 +482,7 @@ dl,
 form,
 .video-container,
 .cl-custom-select {
+    font-family: "montserrat-medium", sans-serif;
     margin-bottom: 3rem;
 }
 
@@ -1214,10 +1215,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .display-1 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 7.8rem;
+    font-size: 7rem;
     line-height: 1.25;
     color: #000000;
     margin-top: 0;
+    /* -webkit-text-stroke: 1px rgba(57, 181, 74, 0.8); */
 }
 
 .display-1--light {
@@ -1252,7 +1254,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .subhead--dark {
-    color: #000000;
+    /* color: #000000; */
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -1351,7 +1354,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 800px) {
-    .s-clients {
+    .s-skills {
         padding-bottom: 17.4rem;
     }
     .section-header.has-bottom-sep::before {
@@ -1496,7 +1499,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav a, .header-nav a:visited {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .header-nav a:hover,
@@ -1517,6 +1520,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav p {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.4rem;
     margin-bottom: 2.7rem;
 }
 
@@ -1549,7 +1554,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     list-style: none;
     display: inline-block;
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 .header-nav__social li {
@@ -1884,7 +1889,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #39b54a;
+    /* background-color: #39b54a; */
+    background-color: #FFFFFF;
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -1932,13 +1938,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social i {
-    font-size: 14px;
+    font-size: 18px;
     right: 0;
     text-align: center;
     display: inline-block;
-    width: 33px;
-    height: 33px;
-    line-height: calc(33px - 4px);
+    width: 35px;
+    height: 35px;
+    line-height: calc(35px - 4px);
     border: 2px solid #FFFFFF;
     border-radius: 50%;
 }
@@ -1989,7 +1995,6 @@ html.no-csstransitions .home-content__main {
 
 
 /* fade in */
-
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -2192,7 +2197,6 @@ html.no-csstransitions .home-content__main {
 }
 
 
-
 /* ===================================================================
  * # about
  *
@@ -2200,7 +2204,8 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    /* background-color: rgba(57, 181, 74, 1); */
+    background-color: rgba(230, 230, 230, 0.8);
     color: #010507;
     position: relative;
 }
@@ -2216,56 +2221,60 @@ html.no-csstransitions .home-content__main {
     max-width: 1024px;
 }
 
-
-/* ------------------------------------------------------------------- 
- * ## about stats
- * ------------------------------------------------------------------- */
-.about-stats {
-    text-align: center;
-}
-
-.stats__col {
-    margin: 5.4rem 0;
-    padding: 0 2rem;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.stats__col:last-child {
-    border-right: none;
-}
-
-.stats__count {
-    font-family: "montserrat-bold", sans-serif;
-    font-size: 8.4rem;
-    line-height: 1;
-    color: #FFFFFF;
-    position: relative;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.stats h5 {
-    font-family: "montserrat-semibold", sans-serif;
-    margin-top: 1.8rem;
-    color: #000000;
-    font-size: 1.8rem;
-    line-height: 1.333;
-    position: relative;
-}
-
 .about__line {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    background-color: #39b54a;
     position: absolute;
     right: 7.2rem;
     top: 0;
 }
+
+
+/* ------------------------------------------------------------------- 
+ * ## testimonials
+ * ------------------------------------------------------------------- */
+
+.testimonials {
+    margin: 3% 10%;
+}
+
+.testimonials p {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    /* color: #555555; */
+    margin-top: 6rem;
+}
+
+.testimonials__slide {
+    padding: 0 0 3rem 0;
+}
+
+.testimonials__avatar {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto 1.2rem auto;
+}
+
+.testimonials__name, 
+.testimonials__pos {
+    display: block;
+}
+
+.testimonials__name {
+    font-family: "montserrat-semibold", sans-serif;
+    color: #000000;
+}
+
+.testimonials__pos {
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1.4rem;
+}
+
 
 
 /* ------------------------------------------------------------------- 
@@ -2295,6 +2304,12 @@ html.no-csstransitions .home-content__main {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .testimonials p {
+        font-size: 2.2rem;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .about-desc {
         font-size: 2rem;
@@ -2305,6 +2320,13 @@ html.no-csstransitions .home-content__main {
     }
     .stats h5 {
         margin-top: 1.2rem;
+    }
+    .testimonials {
+        margin: 0 2rem;
+    }
+    img.testimonials__avatar {
+        height: 12rem;
+        width: 12rem;
     }
 }
 
@@ -2350,6 +2372,13 @@ html.no-csstransitions .home-content__main {
     .about__line {
         height: 7.2rem;
     }
+    img.testimonials__avatar {
+        height: 10rem;
+        width: 10rem;
+    }
+    .testimonials p {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -2358,6 +2387,16 @@ html.no-csstransitions .home-content__main {
     }
     .stats__count {
         font-size: 7.8rem;
+    }
+    .testimonials p {
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    img.testimonials__avatar {
+        height: 7.4rem;
+        width: 7.4rem;
     }
 }
 
@@ -2726,10 +2765,9 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # clients
- *
+ * # skills
  * ------------------------------------------------------------------- */
-.s-clients {
+section.s-skills {
     padding-top: 16.2rem;
     padding-bottom: 16.8rem;
     background-color: #e6e6e6;
@@ -2737,18 +2775,46 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 
-
-/* ------------------------------------------------------------------- 
- * ## slider
- * ------------------------------------------------------------------- */
-.clients-outer {
+section.s-skills > div.skills-outer{
     margin-top: 3.6rem;
     padding-bottom: 9rem;
     text-align: center;
     position: relative;
 }
 
-.clients__slide {
+.skills-outer div.col-full div.skillsContainer{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    padding-bottom: 9rem;
+
+}
+
+.skillIconContainer{
+    height: 12rem;
+    width: 12rem;
+    display: inline-block;
+    margin: 30px;
+}
+
+.skillIconContainer img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## slider
+ * ------------------------------------------------------------------- */
+/* .skills-outer {
+    margin-top: 3.6rem;
+    padding-bottom: 9rem;
+    text-align: center;
+    position: relative;
+}
+
+.skills__slide {
     display: block;
     opacity: .55;
     padding: 1.5rem 2.8rem;
@@ -2756,174 +2822,9 @@ html.no-csstransitions .home-content__main {
     transition: opacity 0.5s ease-in-out;
 }
 
-.clients__slide:hover, .clients__slide:focus {
+.skills__slide:hover, .skills__slide:focus {
     opacity: 1;
-}
-
-
-/* ------------------------------------------------------------------- 
- * ## testimonials
- * ------------------------------------------------------------------- */
-.clients-testimonials {
-    margin-top: 4.2rem;
-    padding-top: 7.2rem;
-    text-align: center;
-    position: relative;
-}
-
-.clients-testimonials::before {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 550px;
-    background-color: rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.clients-testimonials .testimonials {
-    margin: 0 10%;
-}
-
-.clients-testimonials .testimonials p {
-    font-family: "lora-regular", serif;
-    font-size: 3rem;
-    line-height: 1.8;
-    color: #555555;
-    margin-bottom: 6rem;
-}
-
-.clients-testimonials .testimonials__slide {
-    padding: 0 0 3rem 0;
-}
-
-.clients-testimonials .testimonials__avatar {
-    height: 8.4rem;
-    width: 8.4rem;
-    border-radius: 50%;
-    margin: 0 auto 1.2rem auto;
-}
-
-.clients-testimonials .testimonials__name, 
-.clients-testimonials .testimonials__pos {
-    display: block;
-}
-
-.clients-testimonials .testimonials__name {
-    font-family: "montserrat-semibold", sans-serif;
-    color: #000000;
-}
-
-.clients-testimonials .testimonials__pos {
-    font-family: "montserrat-light", sans-serif;
-    font-size: 1.4rem;
-}
-
-.clients-testimonials .testimonials .slick-arrow {
-    position: absolute;
-    top: 7.2rem;
-    width: 66px;
-    height: 66px;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 22px 15px;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-    z-index: 2;
-}
-
-.clients-testimonials .testimonials .slick-prev {
-    left: -130px;
-    background-image: url("../images/left-arrow.png");
-}
-
-.clients-testimonials .testimonials .slick-next {
-    right: -130px;
-    background-image: url("../images/right-arrow.png");
-}
-
-.clients-testimonials .testimonials .slick-dots {
-    margin-top: -0.6px;
-}
-
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * clients
- * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
-    .clients-testimonials .testimonials {
-        margin: 0 12%;
-    }
-    .clients-testimonials .testimonials p {
-        font-size: 2.6rem;
-    }
-    .clients-testimonials .testimonials .slick-prev {
-        left: -100px;
-    }
-    .clients-testimonials .testimonials .slick-next {
-        right: -100px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .clients-testimonials .testimonials p {
-        font-size: 2.2rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .clients-testimonials::before {
-        width: 400px;
-    }
-    .clients-testimonials .testimonials {
-        margin: 0 2rem;
-    }
-    .clients-testimonials .testimonials .slick-arrow {
-        top: auto;
-        bottom: 3rem;
-    }
-    .clients-testimonials .testimonials .slick-prev {
-        left: 0;
-    }
-    .clients-testimonials .testimonials .slick-next {
-        right: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .s-clients {
-        padding-top: 12rem;
-    }
-    .clients-testimonials::before {
-        width: 250px;
-    }
-    .clients-testimonials .testimonials {
-        margin: 0;
-    }
-    .clients-testimonials .testimonials p {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .clients-testimonials .testimonials p {
-        font-size: 1.9rem;
-    }
-}
+} */
 
 
 
@@ -3331,10 +3232,10 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-    padding: 9rem 0 6rem;
+    padding: 0rem 0 3rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 15px;
-    line-height: 2;
+    line-height: 1;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
 }
