@@ -1255,7 +1255,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .subhead--dark {
     /* color: #000000; */
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -1354,9 +1354,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 800px) {
-    .s-skills {
+    /* .s-skills {
         padding-bottom: 17.4rem;
-    }
+    } */
     .section-header.has-bottom-sep::before {
         width: 400px;
     }
@@ -1679,7 +1679,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     top: 0;
     left: -70px;
     width: 70px;
+    height: 42px;
     padding-left: 12px;
+    padding-right: 5px; 
+    line-height: 38px;
+}
+
+.header-menu-text img{
+    vertical-align: middle;
 }
 
 .header-menu-icon {
@@ -1760,7 +1767,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .4;
+    /* opacity: .4; */
+    opacity: .8;
     background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -1773,8 +1781,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .6;
+    /* opacity: .6; */
     background-color: #000000;
+    opacity: .4;
 }
 
 .no-js .s-home {
@@ -1813,6 +1822,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
+    margin-bottom: 0;
 }
 
 .home-content__main {
@@ -2406,19 +2416,19 @@ html.no-csstransitions .home-content__main {
  * # services
  *
  * ------------------------------------------------------------------- */
-.s-services {
+/* .s-services {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
     color: #757575;
     position: relative;
-}
+} */
 
 
 /* ------------------------------------------------------------------- 
  * ## services list
  * ------------------------------------------------------------------- */
-.services-list {
+/* .services-list {
     margin-top: 6rem;
 }
 
@@ -2447,14 +2457,14 @@ html.no-csstransitions .home-content__main {
     color: #39b54a;
     font-size: 4.8rem;
     margin-top: -.6rem;
-}
+} */
 
 
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
     .services-list {
         max-width: 1000px;
     }
@@ -2522,7 +2532,7 @@ html.no-csstransitions .home-content__main {
     .services-list h3 {
         font-size: 2.5rem;
     }
-}
+} */
 
 
 
@@ -2769,7 +2779,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 section.s-skills {
     padding-top: 16.2rem;
-    padding-bottom: 16.8rem;
+    padding-bottom: 16rem;
     background-color: #e6e6e6;
     color: #757575;
     position: relative;
@@ -2777,18 +2787,18 @@ section.s-skills {
 
 section.s-skills > div.skills-outer{
     margin-top: 3.6rem;
-    padding-bottom: 9rem;
+    /* padding-bottom: 9rem; */
     text-align: center;
     position: relative;
 }
 
-.skills-outer div.col-full div.skillsContainer{
+.skills-outer .skillContainer{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 5rem;
     padding-bottom: 9rem;
-
+    justify-content: center;
 }
 
 .skillIconContainer{
@@ -2805,26 +2815,100 @@ section.s-skills > div.skills-outer{
 
 
 /* ------------------------------------------------------------------- 
- * ## slider
+ * responsive:
+ * skills
  * ------------------------------------------------------------------- */
-/* .skills-outer {
-    margin-top: 3.6rem;
-    padding-bottom: 9rem;
-    text-align: center;
-    position: relative;
+@media only screen and (max-width: 1200px) {
+    section.s-skills {
+        padding-bottom: 14rem;
+    }
+    .skills-outer .skillContainer{
+        margin-top: 3rem;
+    }
+    .skillIconContainer{
+        height: 10rem;
+        width: 10rem;
+        display: inline-block;
+        margin: 30px;
+    }
+    .skillIconContainer p{
+        font-size: 1.5rem;
+    } 
 }
 
-.skills__slide {
-    display: block;
-    opacity: .55;
-    padding: 1.5rem 2.8rem;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
+
+@media only screen and (max-width: 1000px) {
+    section.s-skills {
+        padding-bottom: 12rem;
+    }
+    .skills-outer .skillContainer{
+        margin-top: 2rem;
+    }
+    .skillIconContainer{
+        height: 9rem;
+        width: 9rem;
+        display: inline-block;
+        margin: 30px;
+    }
+    .skillIconContainer p{
+        font-size: 1.3rem;
+    } 
+
 }
 
-.skills__slide:hover, .skills__slide:focus {
-    opacity: 1;
-} */
+@media only screen and (max-width: 800px) {
+    section.s-skills {
+        padding-bottom: 8rem;
+    }
+    .skills-outer .skillContainer{
+        margin-top: 1rem;
+    }
+    .skillIconContainer{
+        height: 8rem;
+        width: 8rem;
+        display: inline-block;
+        margin: 30px;
+    }
+    .skillIconContainer p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section.s-skills {
+        padding-top: 12rem;
+        padding-bottom: 4rem;
+    }
+    .skills-outer .skillContainer {
+        margin-top: 0.5rem;
+    }
+    .skillIconContainer{
+        height: 7rem;
+        width: 7rem;
+        display: inline-block;
+        margin: 30px;
+    }
+    .skillIconContainer p{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .skills-outer .skillContainer {
+        margin-top: 0.05rem;
+    }
+    .skillIconContainer{
+        height: 5rem;
+        width: 5rem;
+        display: inline-block;
+        margin: 30px;
+    }
+    .skillIconContainer p{
+        font-size: 0.7rem;
+    }
+
+}
 
 
 

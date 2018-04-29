@@ -43,9 +43,9 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/duy2.png" alt="Homepage">
-            </a>
+            <!-- <a class="site-logo" href="index.html">
+                <img src="images/duy1logo.png" alt="Homepage">
+            </a> -->
         </div>
 
         <nav class="header-nav">
@@ -82,16 +82,23 @@
         </nav>  <!-- end header-nav -->
 
         <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-text">
+                <img src="images/duy1logo.png" alt="Homepage" usemap="#navigation">
+            </span>
+            <!-- <span class="header-menu-text">Menu</span> -->
             <span class="header-menu-icon"></span>
         </a>
+
+        <map name="navigation">
+            <area shape="rect" coords="0,0,100,48" href="#0" alt="navigation" />
+        </map>
 
     </header> <!-- end s-header -->
 
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/deerforest.gif" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -103,8 +110,9 @@
                 <h3>Hello, I'm</h3>
 
                 <h1>
-                    DUY NGUYEN
-                    <br />
+                    DUY NGUYEN 
+                </h1>
+                <h1>
                     Front-end Developer
                 </h1>
 
@@ -112,9 +120,9 @@
                     <a href="#contact" class="smoothscroll btn btn--stroke">
                         Contact Me
                     </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
+                    <!-- <a href="#about" class="smoothscroll btn btn--stroke">
                         More About Me
-                    </a>
+                    </a> -->
                 </div>
 
             </div>
@@ -164,13 +172,13 @@
 
                     <div class="testimonials__slide">
                         <img src="images/avatars/duy.jpg" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
+                        <!-- <div class="testimonials__info">
                             <span class="testimonials__name">Duy Nguyen</span> 
-                            <span class="testimonials__pos">CEO, Apple</span>
-                        </div>
+                            <span class="testimonials__pos"></span>
+                        </div> -->
                         
                         <p>
-                            I'm a web developer with an accounting background in Santa Ana, CA.  I enjoy designing and building visually pleasing applications with user-centered design in mind.  What drew me into development was the opportunity to create and act on my ideas; now I can take a concept from sketch to completion.
+                            I'm a web developer with a background in accounting, based in Santa Ana, CA. As I was earning my degree, I was exposed to the tech world through courses in C# and C++. This exposure helped me realize I was drawn to programming's creative problem-solving. I enjoy designing and building applications with simplistic design that enhances the user's satisfaction and experience.
                         </p>
                     </div>
                 </div>
@@ -181,99 +189,6 @@
 
     </section> <!-- end s-about -->
 
-
-    <!-- services
-    ================================================== -->
-    <!-- <section id='services' class="s-services">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">What We Do</h3>
-                <h1 class="display-2">We’ve got everything you need to launch and grow your business</h1>
-            </div>
-        </div> end section-header -->
-
-        <!-- <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-paint-brush"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Brand Identity</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-group"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Illustration</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-megaphone"></i>
-                </div>  
-                <div class="service-text">
-                    <h3 class="h2">Marketing</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-earth"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Web Design</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-cube"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Packaging Design</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon"><i class="icon-lego-block"></i></div>
-                <div class="service-text">
-                    <h3 class="h2">Web Development</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div> -->
-
-        <!-- </div> end services-list -->
-
-    <!-- </section> end s-services -->
 
 
     <!-- works
@@ -416,66 +331,6 @@
                     </div> 
                     <!-- end masonry__brick -->
 
-                    <!-- <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                                
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-guitarist.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
-                                    <img src="images/portfolio/guitarist.jpg" 
-                                         srcset="images/portfolio/guitarist.jpg 1x, images/portfolio/guitarist@2x.jpg 2x" alt="">
-                                </a>
-                            </div>
-    
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Guitarist
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-    
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-    
-                        </div>
-                    </div> end masonry__brick -->
-            <!--     
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                                
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/g-palmeira.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
-                                    <img src="images/portfolio/palmeira.jpg"
-                                         srcset="images/portfolio/palmeira.jpg 1x, images/portfolio/palmeira@2x.jpg 2x" alt="">
-                                </a>
-                            </div>
-    
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Palmeira
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-    
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-    
-                        </div>
-                    </div> end masonry__brick -->
-
                 </div> <!-- end masonry -->
             </div> <!-- end col-full -->
         </div> <!-- end works-content -->
@@ -490,7 +345,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Skills & Tools</h3>
-                <h1 class="display-2">Skills developed throughout my journey thus far</h1>
+                <h1 class="display-2">Technical skills developed along my journey thus far</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -578,7 +433,7 @@
                         <p>Postman</p>
                     </div>
                     <div class="skillIconContainer">
-                        <img src="./images/tech_icons/php.png" alt="phpStorm">
+                        <img src="./images/tech_icons/phpstorm.png" alt="phpStorm">
                         <p>PHPStorm</p>
                     </div> 
                     <div class="skillIconContainer">
@@ -676,12 +531,12 @@
                         </p>
                     </div>
 
-                    <!-- <div class="cinfo">
-                        <h5>Email Us At</h5>
+                    <div class="cinfo">
+                        <h5>Email Me At</h5>
                         <p>
-                            contact@glintsite.com
+                            duyng19@gmail.com
                         </p>
-                    </div> -->
+                    </div>
 
                     <div class="cinfo">
                         <h5>Call Me At</h5>
@@ -714,38 +569,13 @@
     ================================================== -->
     <footer>
 
-        <!-- <div class="row footer-main">
-
-            <div class="col-six tab-full left footer-desc">
-
-                <div class="footer-logo"></div>
-                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
-
-            </div>
-
-            <div class="col-six tab-full right footer-subscribe">
-
-                <h4>Get Notified</h4>
-                <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
-
-                <div class="subscribe-form">
-                    <form id="mc-form" class="group" novalidate="true">
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-                        <input type="submit" name="subscribe" value="Subscribe">
-                        <label for="mc-email" class="subscribe-message"></label>
-                    </form>
-                </div>
-
-            </div>
-
-        </div> end footer-main -->
-
         <div class="row footer-bottom">
 
             <div class="col-twelve">
                 <div class="copyright">
                     <span>© Copyright Glint 2017</span> 
-                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	
+                    <span>Site Template by <a href="https://www.colorlib.com/" target="_blank">Colorlib</a></span>
+                    <span>Background Image by <a href="http://dawnuxi.com/index.html#intro" target="_blank">Dawn Nguyen</a></span>		
                 </div>
 
                 <div class="go-top">
