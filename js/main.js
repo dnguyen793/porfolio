@@ -348,11 +348,9 @@
     
                     },
                     success: function(msg) {
-                        console.log('msg:', msg);
-                        console.log('msg success:', success);
     
                         // Message was sent
-                        if (msg == 'OK') {
+                        if (msg.indexOf('"success":true')) {
                             sLoader.slideUp("slow"); 
                             $('.message-warning').fadeOut();
                             $('#contactForm').fadeOut();
@@ -361,7 +359,7 @@
                         // There was an error
                         else {
                             sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
+                            $('.message-warning').html('Error sending message');
                             $('.message-warning').slideDown("slow");
                         }
     
