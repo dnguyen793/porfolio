@@ -1650,7 +1650,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     right: 38px;
     top: 24px;
     height: 42px;
-    width: 42px;
+    width: 112px;
     line-height: 42px;
     font-family: "montserrat-medium", sans-serif;
     font-size: 1.3rem;
@@ -1675,9 +1675,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-menu-text {
     display: block;
-    position: absolute;
     top: 0;
-    left: -70px;
+    left: 0;
     width: 70px;
     height: 42px;
     padding-left: 12px;
@@ -1687,6 +1686,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-menu-text img{
     vertical-align: middle;
+    pointer-events: none;
 }
 
 .header-menu-icon {
@@ -1695,7 +1695,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 2px;
     margin-top: -1px;
     position: absolute;
-    left: 10px;
+    left: 80px;
     top: 50%;
     right: auto;
     bottom: auto;
@@ -1768,7 +1768,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     /* opacity: .4; */
-    opacity: .8;
+    /* opacity: .8; */
     background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -2255,7 +2255,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.5rem;
     line-height: 1.8;
     /* color: #555555; */
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .testimonials__slide {
@@ -2317,6 +2317,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 1000px) {
     .testimonials p {
         font-size: 2.2rem;
+        margin-top: 4rem;
     }
 }
 
@@ -2337,6 +2338,9 @@ html.no-csstransitions .home-content__main {
     img.testimonials__avatar {
         height: 12rem;
         width: 12rem;
+    }
+    .testimonials p {
+        margin-top: 3rem;
     }
 }
 
@@ -2388,6 +2392,7 @@ html.no-csstransitions .home-content__main {
     }
     .testimonials p {
         font-size: 2rem;
+        margin-top: 2rem;
     }
 }
 
@@ -2399,7 +2404,8 @@ html.no-csstransitions .home-content__main {
         font-size: 7.8rem;
     }
     .testimonials p {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
     }
 }
 
