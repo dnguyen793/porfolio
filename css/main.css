@@ -1741,9 +1741,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 400px) {
-    .header-menu-text {
+    /* .header-menu-text {
         display: none;
-    }
+    } */
 }
 
 
