@@ -1767,7 +1767,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: 0;
     width: 100%;
     height: 100%;
-    /* opacity: .4; */
+    opacity: .4;
     /* opacity: .8; */
     background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -1783,7 +1783,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 100%;
     /* opacity: .6; */
     background-color: #000000;
-    opacity: .4;
+    opacity: .2;
 }
 
 .no-js .s-home {
@@ -1963,6 +1963,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: #39b54a;
     right: 4.5rem;
     font-size: 1.3rem;
+    font-weight: bold;
     opacity: 0;
     visibility: hidden;
     -webkit-transform: scale(0);
@@ -1971,6 +1972,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transform-origin: 100% 50%;
     -ms-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
+    text-shadow: 2px 2px 8px #000000;
 }
 
 .home-social li:hover span {
@@ -2212,7 +2214,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 16.2rem;
+    padding-top: 12rem;
     padding-bottom: 9rem;
     /* background-color: rgba(57, 181, 74, 1); */
     background-color: rgba(230, 230, 230, 0.8);
@@ -2248,7 +2250,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .testimonials {
-    margin: 3% 10%;
+    margin: 3% 6%;
 }
 
 .testimonials p {
@@ -2785,7 +2787,7 @@ html.no-csstransitions .home-content__main {
  * # skills
  * ------------------------------------------------------------------- */
 section.s-skills {
-    padding-top: 16.2rem;
+    padding-top: 12rem;
     padding-bottom: 16rem;
     background-color: #e6e6e6;
     color: #757575;
@@ -2809,10 +2811,10 @@ section.s-skills > div.skills-outer{
 }
 
 .skillIconContainer{
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
     display: inline-block;
-    margin: 30px;
+    margin: 35px;
 }
 
 .skillIconContainer img{
@@ -2928,7 +2930,7 @@ section.s-skills > div.skills-outer{
     background-image: url("../images/contact-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
-    padding-top: 15rem;
+    padding-top: 14rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
