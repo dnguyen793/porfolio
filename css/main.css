@@ -2811,11 +2811,14 @@ section.s-skills > div.skills-outer{
 }
 
 .skillIconContainer{
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
     display: inline-block;
-    margin: 35px;
+    margin: 38px;
 }
+.skillIconContainer p{
+    font-size: 1.5rem;
+} 
 
 .skillIconContainer img{
     height: 100%;
@@ -2835,13 +2838,13 @@ section.s-skills > div.skills-outer{
         margin-top: 3rem;
     }
     .skillIconContainer{
-        height: 10rem;
-        width: 10rem;
+        height: 8rem;
+        width: 8rem;
         display: inline-block;
         margin: 30px;
     }
     .skillIconContainer p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     } 
 }
 
@@ -2854,13 +2857,13 @@ section.s-skills > div.skills-outer{
         margin-top: 2rem;
     }
     .skillIconContainer{
-        height: 9rem;
-        width: 9rem;
+        height: 7rem;
+        width: 7rem;
         display: inline-block;
         margin: 30px;
     }
     .skillIconContainer p{
-        font-size: 1.3rem;
+        font-size: 1rem;
     } 
 
 }
@@ -2873,13 +2876,13 @@ section.s-skills > div.skills-outer{
         margin-top: 1rem;
     }
     .skillIconContainer{
-        height: 8rem;
-        width: 8rem;
+        height: 6rem;
+        width: 6rem;
         display: inline-block;
         margin: 30px;
     }
     .skillIconContainer p{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -2892,13 +2895,13 @@ section.s-skills > div.skills-outer{
         margin-top: 0.5rem;
     }
     .skillIconContainer{
-        height: 7rem;
-        width: 7rem;
+        height: 5rem;
+        width: 5rem;
         display: inline-block;
         margin: 30px;
     }
     .skillIconContainer p{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
 }
@@ -2908,13 +2911,13 @@ section.s-skills > div.skills-outer{
         margin-top: 0.05rem;
     }
     .skillIconContainer{
-        height: 5rem;
-        width: 5rem;
+        height: 4rem;
+        width: 4rem;
         display: inline-block;
         margin: 30px;
     }
     .skillIconContainer p{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
 }
