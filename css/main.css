@@ -2572,12 +2572,38 @@ html.no-csstransitions .home-content__main {
     transform: translate3d(0, -100%, 0);
 }
 
-.item-folio__project-link i {
+.item-folio__project-link2 {
+    display: block;
+    color: #FFFFFF;
+    box-shadow: 0 0 0 1px #FFFFFF;
+    border-radius: 50%;
+    height: 4.2rem;
+    width: 4.2rem;
+    text-align: center;
+    z-index: 500;
+    position: absolute;
+    top: 3rem;
+    left: 10rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.item-folio__project-link i,
+.item-folio__project-link2 i {
     font-size: 1.8rem;
     line-height: 4.2rem;
 }
 
-.item-folio__project-link::before {
+.item-folio__project-link p,
+.item-folio__project-link2 p{
+    font-size: 1.1rem;
+}
+
+.item-folio__project-link::before,
+.item-folio__project-link2::before {
     display: block;
     content: "";
     height: 3rem;
@@ -2590,7 +2616,10 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__project-link:hover,
 .item-folio__project-link:focus,
-.item-folio__project-link:active {
+.item-folio__project-link:active,
+.item-folio__project-link2:hover,
+.item-folio__project-link2:focus,
+.item-folio__project-link2:active{
     background-color: #FFFFFF;
     color: #000000;
 }
@@ -2618,6 +2647,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio:hover .item-folio__project-link,
+.item-folio:hover .item-folio__project-link2,
 .item-folio:hover .item-folio__text {
     opacity: 1;
     visibility: visible;
@@ -2625,8 +2655,31 @@ html.no-csstransitions .home-content__main {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+/* .linkContainer{
+    pointer-events: none;
+} */
 
+ul.link{
+    /* display: inline-block; */
+    margin: 0;
+    margin-top: 5px;
+}
 
+ul.link li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+ul.link li a{ 
+    text-decoration: none;
+    color: white;
+}
+
+ul.link p{
+    margin-bottom: 0;
+    text-align: center;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * works

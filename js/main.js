@@ -101,6 +101,7 @@
    /* photoswipe
     * ----------------------------------------------------- */
     var clPhotoswipe = function() {
+
         var items = [],
             $pswp = $('.pswp')[0],
             $folioItems = $('.item-folio');
@@ -135,7 +136,7 @@
             // bind click event
             $folioItems.each(function(i) {
 
-                $(this).on('click', function(e) {
+                $(this).on('click', '.clickable', function(e) {
                     e.preventDefault();
                     var options = {
                         index: i,
@@ -148,7 +149,6 @@
                 });
 
             });
-
     };
     
 
