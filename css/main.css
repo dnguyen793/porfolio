@@ -2655,30 +2655,22 @@ html.no-csstransitions .home-content__main {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-/* .linkContainer{
-    pointer-events: none;
-} */
 
-ul.link{
-    /* display: inline-block; */
-    margin: 0;
-    margin-top: 5px;
+a.livelink{
+    margin-right: 15px;
 }
 
-ul.link li{
-    list-style-type: none;
-    display: inline-block;
-
-}
-
-ul.link li a{ 
+a.livelink,
+a.githublink{ 
     text-decoration: none;
     color: white;
+    font-size: 1.5rem;
 }
 
-ul.link p{
-    margin-bottom: 0;
-    text-align: center;
+.livelink p,
+.githublink p {
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 /* ------------------------------------------------------------------- 
  * responsive:

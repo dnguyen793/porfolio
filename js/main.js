@@ -106,9 +106,9 @@
             $pswp = $('.pswp')[0],
             $folioItems = $('.item-folio');
 
+        var $liveElenment, $githubElement, $livehref, $githubhref;
             // get items
             $folioItems.each( function(i) {
-
                 var $folio = $(this),
                     $thumbLink =  $folio.find('.thumb-link'),
                     $title = $folio.find('.item-folio__title'),
@@ -118,8 +118,15 @@
                     $href = $thumbLink.attr('href'),
                     $size = $thumbLink.data('size').split('x'),
                     $width  = $size[0],
-                    $height = $size[1];
-         
+                    $height = $size[1],
+                    $live = $folio.find('.item-folio__project-link'),
+                    $github = $folio.find('.item-folio__project-link2');
+
+                    $livehref = $live.attr('href');
+                    $githubhref = $github.attr('href');
+                    $liveElenment = '<a href="' + $livehref + '" class="livelink" target="_blank">' + $.trim($live.html()) + '</a>';
+                    $githubElement = '<a href="' + $githubhref + '" class="githublink" target="_blank">' + $.trim($github.html()) + '</a>';
+
                 var item = {
                     src  : $href,
                     w    : $width,
@@ -127,7 +134,7 @@
                 }
 
                 if ($caption.length > 0) {
-                    item.title = $.trim($titleText + $captionText);
+                    item.title = $.trim($titleText + $liveElenment + $githubElement + $captionText);
                 }
 
                 items.push(item);
