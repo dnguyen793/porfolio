@@ -2975,6 +2975,13 @@ section.s-skills > div.skills-outer{
     color: #4f4f4f;
 }
 
+input#contactName::placeholder,
+input#contactEmail::placeholder,
+input#contactSubject::placeholder,
+textarea#contactMessage::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .contact-content input:-moz-placeholder,
 .contact-content select:-moz-placeholder,
 .contact-content textarea:-moz-placeholder {
@@ -3032,6 +3039,10 @@ section.s-skills > div.skills-outer{
 
 .contact-secondary .cinfo {
     margin-bottom: 4.8rem;
+}
+
+.cinfo a{
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .contact-social {
