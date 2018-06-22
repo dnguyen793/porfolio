@@ -14,28 +14,28 @@ $output = [
 $message['contactName'] = filter_var($_POST['contactName'], FILTER_SANITIZE_STRING);
 if(empty($message['contactName'])){
     $output['success'] = false;
-    $output['messages'][] = 'missing contactName';
+    $output['messages'][] = ' Missing contact name';
 }
 
 //sanitize email field
 $message['contactEmail'] = filter_var($_POST['contactEmail'], FILTER_VALIDATE_EMAIL);
 if(empty($message['contactEmail'])){
     $output['success'] = false;
-    $output['messages'][] = 'missing contactEmail';
+    $output['messages'][] = ' Missing contact email';
 }
 
 //sanitize subject field
 $message['contactSubject'] = filter_var($_POST['contactSubject'], FILTER_SANITIZE_STRING);
 if(empty($message['contactSubject'])){
     $output['success'] = false;
-    $output['messages'][] = 'missing contactSubject';
+    $output['messages'][] = ' Missing contact subject';
 }
 
 //sanitize message field
 $message['contactMessage'] = filter_var($_POST['contactMessage'], FILTER_SANITIZE_STRING);
 if(empty($message['contactMessage'])){
     $output['success'] = false;
-    $output['messages'][] = 'missing contactMessage';
+    $output['messages'][] = ' Missing contact message';
 }
 
 
@@ -48,7 +48,7 @@ if($output['success'] !== null){
 
 //set up mail object
 $mail = new PHPMailer;
-$mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
+$mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $mail->isSMTP();                // Set mailer to use SMTP.
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.

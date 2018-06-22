@@ -348,6 +348,7 @@
     
                     type: "POST",
                     url: "php_mailer/mail_handler.php",
+                    dataType: 'json',
                     data: $(form).serialize(),
                     beforeSend: function() { 
     
@@ -355,9 +356,10 @@
     
                     },
                     success: function(msg) {
+                        // console.log('server msg', msg);
     
                         // Message was sent
-                        if (msg.indexOf('"success":true')) {
+                        if (msg.success) {
                             sLoader.slideUp("slow"); 
                             $('.message-warning').fadeOut();
                             $('#contactForm').fadeOut();
@@ -371,10 +373,13 @@
                         }
     
                     },
-                    error: function() {
+                    error: function(resp) {
+                        // console.log('server msg', resp);
+
+                        let error = resp.responseJSON.messages;
     
                         sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again.");
+                        $('.message-warning').html(error+ ". Unable to send message!" );
                         $('.message-warning').slideDown("slow");
     
                     }
