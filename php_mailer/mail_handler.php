@@ -14,28 +14,28 @@ $output = [
 $message['contactName'] = filter_var($_POST['contactName'], FILTER_SANITIZE_STRING);
 if(empty($message['contactName'])){
     $output['success'] = false;
-    $output['messages'][] = 'missing name key';
+    $output['messages'][] = 'missing contactName';
 }
 
 //sanitize email field
 $message['contactEmail'] = filter_var($_POST['contactEmail'], FILTER_VALIDATE_EMAIL);
 if(empty($message['contactEmail'])){
     $output['success'] = false;
-    $output['messages'][] = 'missing email key';
+    $output['messages'][] = 'missing contactEmail';
 }
 
 //sanitize subject field
 $message['contactSubject'] = filter_var($_POST['contactSubject'], FILTER_SANITIZE_STRING);
 if(empty($message['contactSubject'])){
     $output['success'] = false;
-    $output['messages'][] = 'missing contact key';
+    $output['messages'][] = 'missing contactSubject';
 }
 
 //sanitize message field
 $message['contactMessage'] = filter_var($_POST['contactMessage'], FILTER_SANITIZE_STRING);
 if(empty($message['contactMessage'])){
     $output['success'] = false;
-    $output['messages'][] = 'missing message key';
+    $output['messages'][] = 'missing contactMessage';
 }
 
 

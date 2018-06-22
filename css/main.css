@@ -1632,12 +1632,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     visibility: visible;
     -webkit-transition-property: all;
     transition-property: all;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
     left: 0;
 }
 
@@ -2975,6 +2975,13 @@ section.s-skills > div.skills-outer{
     color: #4f4f4f;
 }
 
+input#contactName::placeholder,
+input#contactEmail::placeholder,
+input#contactSubject::placeholder,
+textarea#contactMessage::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .contact-content input:-moz-placeholder,
 .contact-content select:-moz-placeholder,
 .contact-content textarea:-moz-placeholder {
@@ -3032,6 +3039,10 @@ section.s-skills > div.skills-outer{
 
 .contact-secondary .cinfo {
     margin-bottom: 4.8rem;
+}
+
+.cinfo a{
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .contact-social {
