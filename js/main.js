@@ -356,7 +356,7 @@
     
                     },
                     success: function(msg) {
-                        // console.log('server msg', msg);
+                        console.log('server msg', msg);
     
                         // Message was sent
                         if (msg.success) {
@@ -374,9 +374,10 @@
     
                     },
                     error: function(resp) {
-                        // console.log('server msg', resp);
+                        console.log('server msg', resp);
 
-                        let error = resp.responseJSON.messages;
+                        // let error = resp.responseJSON.messages;
+                        let error = resp.responseText;
     
                         sLoader.slideUp("slow"); 
                         $('.message-warning').html(error+ ". Unable to send message!" );

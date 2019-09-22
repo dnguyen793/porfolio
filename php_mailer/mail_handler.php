@@ -89,11 +89,11 @@ $mail->AltBody = htmlentities($message['contactMessage']);
 if(!$mail->send()) {
     $output['success'] = false;
     $output['message'][] = $mail->ErrorInfo;
-    // echo 'Message could not be sent.';
-    // echo 'Mailer Error: ' . $mail->ErrorInfo;
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
     $output['success'] = true;
-    // echo 'Message has been sent';
-}
+    echo 'Message has been sent';
+}   
     echo json_encode($output);
 ?>
