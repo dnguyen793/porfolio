@@ -2347,13 +2347,13 @@ section.s-skills > div.skills-outer{
         margin-top: 0.05rem;
     }
     .skillIconContainer{
-        height: 6rem;
-        width: 6rem;
+        height: 5rem;
+        width: 5rem;
         display: inline-block;
-        margin: 30px;
+        margin: 21px;
     }
     .skillIconContainer p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 }
